@@ -8,4 +8,7 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
+
+  podman build -t react-js-railway .
   
+  podman run --rm -p 3000:3000 localhost/react-js-railway
