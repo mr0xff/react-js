@@ -43,7 +43,7 @@ export function Navbar() {
           className="flex items-center gap-3 focus:outline-none"
           aria-label="Voltar ao início"
         >
-          <TcaLogoText size={48} />
+          <img src="logo.png" alt="30 anos de aniversairo" className="w-32" />
         </button>
 
         {/* Desktop Nav */}
