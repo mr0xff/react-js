@@ -6,6 +6,7 @@ import { MissionSection } from "./components/MissionSection";
 import { Gallery } from "./components/Gallery";
 import { EventSection } from "./components/EventSection";
 import { Footer } from "./components/Footer";
+import { WhatsAppButton } from "./components/WhatsAppButton"; // Importe aqui
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
         <EventSection />
       </main>
       <Footer />
+
+      {/* O botão flutuante entra aqui no final */}
+      <WhatsAppButton />
     </div>
   );
 }
