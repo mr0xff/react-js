@@ -95,25 +95,23 @@ const testimonials = [
     id: 1,
     quote:
       "O Tribunal de Contas representa um pilar fundamental para a transparência e a boa governação em Angola. Trinta anos de dedicação ao serviço público são motivo de grande orgulho para toda a nação.",
-    name: "Dr. Exequiel Luvualu de Carvalho",
-    role: "Presidente do Tribunal de Contas de Angola",
-    image: "https://images.unsplash.com/photo-1615656850442-e6fa34e3cf8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwcHJvZmVzc2lvbmFsJTIwbWFuJTIwcG9ydHJhaXQlMjBzdWl0fGVufDF8fHx8MTc3MjgwMzg3OHww&ixlib=rb-4.1.0&q=80&w=400",
-  },
-  {
+    name: "Dr. Carlos Luís M. António",
+    role: "Juiz Conselheiro da 1ª Câmara do Tribunal de Contas",
+      {
     id: 2,
     quote:
-      "Ao longo destes trinta anos, testemunhei a evolução notável desta instituição, que cresceu em capacidade técnica, modernidade e impacto na gestão das finanças públicas angolanas.",
-    name: "Dra. Maria da Conceição",
-    role: "Vice-Presidente do Tribunal de Contas",
-    image: "https://images.unsplash.com/photo-1710778044102-56a3a6b69a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwcHJvZmVzc2lvbmFsJTIwd29tYW4lMjBleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI4MDM4Nzh8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "Ao longo destes trinta anos, a evolução notável desta instituição, que cresceu em capacidade técnica, modernidade e impacto na gestão das finanças públicas angolanas.",
+    name: "Dra. Arlete Maria Bolonhês da Conceição",
+    role: "Juíza Conselheira da 1ª Câmara do Tribunal de Contas",
+    
   },
   {
     id: 3,
     quote:
       "A missão do TCA vai além da fiscalização; é um compromisso permanente com a construção de um Estado mais justo, transparente e eficiente ao serviço dos cidadãos angolanos.",
-    name: "Dr. António Fernandes",
+    name: "Dr. Sebastião Gunza",
     role: "Juiz Conselheiro — Tribunal de Contas",
-    image: "https://images.unsplash.com/photo-1615656850442-e6fa34e3cf8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwcHJvZmVzc2lvbmFsJTIwbWFuJTIwcG9ydHJhaXQlMjBzdWl0fGVufDF8fHx8MTc3MjgwMzg3OHww&ixlib=rb-4.1.0&q=80&w=400",
+  
   },
 ];
 
