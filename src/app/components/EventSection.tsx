@@ -2,15 +2,35 @@ import { useState, FormEvent } from "react";
 import { Calendar, MapPin, Clock, CheckCircle2, Users, Music, Award, Mic } from "lucide-react";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-const schedule = [
-  { time: "08:30", title: "Recepção e Acreditação dos Convidados", icon: Users },
-  { time: "09:00", title: "Sessão Solene de Abertura", icon: Award },
-  { time: "10:00", title: "Conferência: 30 Anos de Fiscalização Financeira em Angola", icon: Mic },
-  { time: "11:30", title: "Painel: O Futuro do Controlo das Finanças Públicas", icon: Mic },
-  { time: "13:00", title: "Almoço Institucional", icon: Users },
-  { time: "15:00", title: "Entrega de Condecorações e Reconhecimentos", icon: Award },
-  { time: "16:30", title: "Apresentação Cultural — Arte e Identidade Angolana", icon: Music },
-  { time: "18:00", title: "Cerimónia de Encerramento e Cocktail", icon: CheckCircle2 },
+const anniversarySchedule = [
+  {
+    date: "09/04/2026",
+    weekday: "Quinta-feira",
+    activities: [
+      { time: "09:00 - 09:50", event: "Receção e Acolhimento", resp: "DSA/Protocolo" },
+      { time: "10:00 - 10:15", event: "Sessão Solene & Hino Nacional", resp: "Coro TdC", highlight: true },
+      { time: "10:30 - 11:00", event: "Discurso de Abertura", resp: "S.Exa Presidente da República" },
+      { time: "11:30 - 11:50", event: "O TdC como pilar da Boa Governação", resp: "Ven. Juiz Sebastião Gunza" },
+      { time: "13:00 - 13:30", event: "Lançamento de Portais e Revistas", resp: "Vários" },
+      { time: "15:00 - 17:00", event: "Ciclo de Painéis Técnicos (Brasil/Angola)", resp: "GCI / Prelectores" }
+    ]
+  },
+  {
+    date: "10/04/2026",
+    weekday: "Sexta-feira",
+    activities: [
+      { time: "09:30 - 12:30", event: "Conferências: IA, Compliance e Direito Público", resp: "GCI / Prelectores" },
+      { time: "14:30 - 16:00", event: "Relatório Final e Encerramento Cultural", resp: "Coro TdC", highlight: true }
+    ]
+  },
+  {
+    date: "11/04/2026",
+    weekday: "Sábado",
+    activities: [
+      { time: "08:00", event: "Inauguração Complexo Desportivo (Zango)", resp: "D.S.A" },
+      { time: "19:30", event: "Jantar de Gala (30 Anos)", resp: "Tenda da Ilha", highlight: true }
+    ]
+  }
 ];
 
 function RSVPForm() {
@@ -224,7 +244,7 @@ export function EventSection() {
               {
                 icon: MapPin,
                 label: "Local",
-                value: "Palácio da República",
+                value: "Palácio da Justiça",
                 sub: "Cidade Alta, Luanda",
               },
             ].map((item) => (
