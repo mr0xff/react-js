@@ -1,33 +1,18 @@
-# Build stage
-FROM node:20-alpine AS builder
-
+# Estágio 1: Build
+FROM node:22-alpine AS builder
 WORKDIR /app
-
-# Copy package files
-COPY package.json package-lock.json ./
-
-# Install dependencies
+COPY package*.json ./
 RUN npm ci
-
-# Copy source code
 COPY . .
-
-# Build the application
 RUN npm run build
 
-# Runtime stage
-FROM node:20-alpine
+# Estágio 2: Runtime com Nginx
+FROM nginx:alpine
+# Remove a config padrão e copia a nossa
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copia os ficheiros do build
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-WORKDIR /app
+EXPOSE 80
 
-# Install a simple HTTP server to serve the static files
-RUN npm install -g serve
-
-# Copy built files from builder
-COPY --from=builder /app/dist ./dist
-
-# Expose port (Railway will use this)
-EXPOSE 3000
-
-# Start the server
-CMD ["sh", "-c", "serve -s dist -l $PORT"]
+CMD ["nginx", "-g", "daemon off;"]

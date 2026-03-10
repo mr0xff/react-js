@@ -14,8 +14,6 @@ export default function App() {
       className="min-h-screen"
       style={{ fontFamily: "'Roboto', sans-serif" }}
     >
-      <title>30 Anos – Tribunal de Contas de Angola | 1996–2026</title>
-
       <Navbar />
       <main>
         <Hero />
