@@ -8,6 +8,7 @@ import { EventSection } from "./components/EventSection";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton"; // Importe aqui
 import { SpeakersSection } from "./components/SpeakersSection";
+import { GuestsGallery } from "./components/GuestsGallery";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Gallery />
         <EventSection />
         <SpeakersSection />
+        <GuestsGallery />
       </main>
       <Footer />
 
