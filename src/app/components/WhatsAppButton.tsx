@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export function WhatsAppButton() {
   // Substitua pelo número real do Tribunal (ex: 244900000000)
-  const phoneNumber = "244900000000"; 
+  const phoneNumber = "244222371920"; 
   const message = encodeURIComponent("Olá! Gostaria de informações sobre os 30 anos do Tribunal de Contas.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

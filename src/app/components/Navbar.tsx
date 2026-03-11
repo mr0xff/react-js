@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ExternalLink } from "lucide-react";
-import { TcaLogoText } from "./TcaLogo";
 
 const navLinks = [
   { label: "Início", href: "#hero" },
   { label: "Linha do Tempo", href: "#timeline" },
   { label: "Galeria", href: "#galeria" },
   { label: "Evento", href: "#evento" },
+  { label: "Oradores", href: "#oradores" },
   { label: "Contacto", href: "#rodape" },
 ];
 
